@@ -1,5 +1,4 @@
 #1
-"""
 nombre=input("Ingrese su nombre ") 
 apellido=input("Ingrese su apellido ")
 nombreCompleto=nombre+""+apellido
@@ -24,6 +23,7 @@ print("El caracter aparece",palabra.count(caracter),"veces en la palabra")
 nombreYApellido=input("Ingrese nombre y apellido ")
 nombreYApellido=nombreYApellido.lower()
 print(str.title(nombreYApellido))
-"""
+
 #5
 frase=input("Ingrese una palabra ")
+print("Frase transformada:"+frase.swapcase())

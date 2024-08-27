@@ -138,7 +138,7 @@ else:
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #11 Se desea leer por teclado un número comprendido entre 0 y 10 (inclusive) y se desea visualizar si el número
-#   es par o impar. (usar función random)
+#   es par o impar. (usar función random) 
 print("Ejercicio 11")
 numRND=random.randint(0, 10)
 print("El número es",numRND)
