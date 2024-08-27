@@ -6,17 +6,15 @@ import os
 #  lo siguiente: “Socio vip”.
 print("Ejercicio 1")
 categoria = input("Ingrese la categoría del socio ").upper()
-socioVip=False
-while categoria !="A" and categoria != "B" and categoria!="C":
+while categoria !="A" and categoria != "B" and categoria != "C":
    categoria = input("La categoría es incorrecta ").upper()
-if categoria=="A":
-   socioVip=True
 antiguedad = int(input("Ingrese la antigüedad en el club en años "))
-if antiguedad<10 or antiguedad>20 or categoria!="A":
-   socioVip=False
-   print("Socio normal")
+if categoria =="A" and antiguedad<10:
+   print("Socio VIP")
+elif categoria!="A" and antiguedad<10:
+   print("Socio normal") 
 else:
-   print("Socio Vip")
+   print("Socio VIP")
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #2 Dadas las horas trabajadas y la categoría de un empleado. Calcular y mostrar el sueldo, sabiendo
@@ -132,11 +130,11 @@ gasto=float(input("¿Cuanto gastó en la compra? "))
 if gasto < 5000:
    if gasto <= 3000:
       gasto=gasto-(gasto*10)/100
-      print("Pago con efectivo $",gasto)
+      print("Pagó con efectivo $"+str(gasto))
    elif gasto < 5000:
-      print("Pago con tarjeta de débito")
+      print("Pagó con tarjeta de débito")
 else:
-   print("Pago con tarjeta de crédito") 
+   print("Pagó con tarjeta de crédito") 
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #11 Se desea leer por teclado un número comprendido entre 0 y 10 (inclusive) y se desea visualizar si el número
